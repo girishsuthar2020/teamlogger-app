@@ -9,20 +9,24 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { RouterModule } from '@angular/router';
 import { ResetPasswordComponent } from './auth/reset-password/reset-password.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { CommonComponent } from './common/common.component';
+import { CommonModule } from './common/common.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthComponent,
-    LoginComponent,
-    RegisterComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
+    HomepageComponent,
+    CommonComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    RouterModule
+    RouterModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

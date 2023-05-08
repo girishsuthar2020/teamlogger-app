@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { AuthComponent } from './auth/auth.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
     loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule),
     data: { title: 'Auth' }
   },
+  {
+    path: 'homepage',
+    component: HomepageComponent
+  }
 ];
 
 @NgModule({
